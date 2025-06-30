@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+Main -> Scanner: new Scanner(System.in)
+Scanner --> Main: scanner object
+
+Main -> Scanner: nextInt()
+Scanner --> Main: n (input value)
+Main -> Main: close Scanner
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Start --> if: Начало
+
+if --> "else if": Не повертає 0
+
+"else if" --> endif: "return 1" (n == 1)
+
+if --> else: Якщо (ні)
+
+else --> end: Створити int[] dp = new int[n + 1] \n Встановити dp[0] = 0 \n Встановити dp[1] = 1 \n Цикл для (i) від 2 до n \n Обчислити dp[i] = dp[i - 1] + dp[i - 2]
+
+end --> endif: Повернути dp[n]
+
+endif --> stop
+@enduml
