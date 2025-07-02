@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class App_Iteration {
     public  static int fib(int n) {
-        if (n <= 0) {
+        if (n <= 1) {
             return n;
         }
 
